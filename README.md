@@ -1,1 +1,0 @@
-# cycle-metod-react-practice
