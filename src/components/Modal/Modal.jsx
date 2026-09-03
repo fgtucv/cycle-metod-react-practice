@@ -10,7 +10,6 @@ export class Modal extends Component {
     }
 
     render() {
-        console.log('Modal component rendered')
         return (
             <>
                 <button onClick={this.toggleModal}>Toggle Modal</button>
@@ -23,11 +22,9 @@ export class Modal extends Component {
 
     componentWillUnmount() {
         window.removeEventListener('keydown', this.toggleModal)
-        console.log('Modal component unmounted')
     }
 
     componentDidMount() {
-        console.log('Modal component mounted')
         window.addEventListener('keydown', this.toggleModal)
     }
 }
